@@ -33,6 +33,7 @@ import { Switch } from "@/components/ui/switch"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState } from "react"
+import { LogVolumeGraph } from "@/components/log-volume-graph"
 
 import data from "./data.json"
 
@@ -164,6 +165,11 @@ export default function Page() {
                     </Button>
                   </div>
                 </div>
+              </div>
+
+              {/* Log Volume Graph */}
+              <div className="px-4 lg:px-6">
+                <LogVolumeGraph />
               </div>
 
               {/* Log Entries */}
